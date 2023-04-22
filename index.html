@@ -18,51 +18,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container mb-4">
-      <div class="row">
-        <div class="col-3 d-flex  mt-4 gap-2">
+    <div class="container mt-2 p-4">
+      <div class="row mb-4">
+        <div class="d-flex mt-4 gap-2 w-100">
           <input
-            class="ps-3 p-2 w-100 text-start border border-light rounded-pill bg-dark text-white search-box"
+            class="ps-3 p-2 w-100 text-start border border-light rounded-pill  text-white search-box"
             type="text"
             placeholder="Search"
             required
           />
           <button
-            class="btn btn-outline-dark text-white border border-light bg-dark rounded-circle search-btn"
+            class="btn btn-outline-dark text-white border border-light  rounded-circle search-btn"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </div>
-      <h1 class="text-center power">Movie</h1>
-      <p class="text-center text-danger power fw-bold">Find movie information: </p>
+      <h1 class="text-center text-light power">Movie</h1>
+      <p class="text-center text-danger power fw-bold">
+        Find movie information:
+      </p>
       <div class="row mt-3 spinner">
         <div class="spinner-border text-danger mx-auto" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
-      <div class="row mt-4">
-        <div
-          class="card col-3 mx-auto p-0 overflow-hidden border-2 border-dark loading"
-        >
-          <div>
-            <a class="poster-link"><img alt="poster" class="movie-poster w-100" /></a>
-          </div>
-          <div class="p-3">
-            <div
-              class="movie-title fw-bold text-center text-danger pb-2"
-              style="font-size: 20px"
-            ></div>
-            <div class="movie-year mb-1"></div>
-            <div class="movie-rating mb-1"></div>
-            <div class="movie-BoxOffice mb-1"></div>
-            <div class="movie-genre mb-1"></div>
-            <div class="movie-writer mb-1"></div>
-            <div class="movie-actors mb-1"></div>
-            <div class="movie-Awards mb-1"></div>
-            <div class="movie-plot mb-1"></div>
-            
 
+      <div class="row mt-4">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+          <div class="card col-10 col-md-4 col-lg-3 overflow-hidden box-shadow box1">
+            <div>
+              <a class="poster-link"
+                ><img alt="poster" class="movie-poster w-100"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="card col-md-8 col-lg-10 p-0 overflow-hidden border-1 border-dark loading box-shadow box2"
+          >
+            <div class="p-3">
+              <div
+                class="movie-title fw-bold text-center text-danger pb-2"
+                style="font-size: 20px"
+              ></div>
+              <div class="movie-year mb-1"></div>
+              <div class="movie-rating mb-1"></div>
+              <div class="movie-BoxOffice mb-1"></div>
+              <div class="movie-genre mb-1"></div>
+              <div class="movie-writer mb-1"></div>
+              <div class="movie-actors mb-1"></div>
+              <div class="movie-Awards mb-1"></div>
+              <div class="movie-plot mb-1"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -70,8 +77,7 @@
 
     <!-- footer -->
     <footer class="my-5">
-
-      <div class="text-center text-dark fw-bold">
+      <div class="text-center text-light fw-bold">
         Powerd by:
         <small>
           <a
@@ -81,7 +87,6 @@
           ></small
         >
       </div>
-    </div>
       <!-- AddToAny BEGIN -->
       <div class="mt-3 d-flex justify-content-center">
         <!-- AddToAny BEGIN -->
@@ -98,9 +103,6 @@
         <script async src="https://static.addtoany.com/menu/page.js"></script>
         <!-- AddToAny END -->
       </div>
-
-      <script async src="https://static.addtoany.com/menu/page.js"></script>
-      <!-- AddToAny END -->
     </footer>
 
     <!-- javascript code -->

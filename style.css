@@ -11,5 +11,29 @@
 
 }
 body{
-    background-repeat: round
+    background-repeat: round;
+    padding: 10px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);
+}
+.box1{
+    transform: rotate(-5deg);
+    /* transform: rotateZ(-10deg); */
+}
+.box2{
+    transform: rotate(3deg);
+    background-color: transparent;
+    color: wheat;
+    /* color: white; */
+}
+.container{
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+
+.search-btn, .search-box{
+    background-color: transparent;
+    outline: none;
 }

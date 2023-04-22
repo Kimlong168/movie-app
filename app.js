@@ -1,7 +1,7 @@
 let movie = {
     apiKey :"4a20e0de",
     fetchMovie: function (movie) {
-        fetch("http://www.omdbapi.com/?i=tt3896198&type=series&t="
+        fetch("http://www.omdbapi.com/?i=tt3896198&type=movie&t="
         +movie
         +"&apikey="
         +this.apiKey)
@@ -12,6 +12,7 @@ let movie = {
         const {Title, Poster, Plot, Genre, Runtime, Director, Actors, Released, imdbRating, Writer, Awards, BoxOffice} = data;
         document.querySelector(".movie-title").innerHTML = Title;
         document.querySelector(".movie-poster").src = Poster;
+      
         document.querySelector(".movie-genre").innerHTML =`<span class="fw-bold">Genre:</span> ` + Genre;
         document.querySelector(".movie-year").innerHTML =`<span class="fw-bold">Release:</span> ` + Released;
         document.querySelector(".movie-rating").innerHTML =`<span class="fw-bold">Rating:</span> `+ imdbRating;
@@ -19,7 +20,7 @@ let movie = {
         document.querySelector(".movie-actors").innerHTML =`<span class="fw-bold">Actors:</span> ` + Actors;    
         document.querySelector(".movie-writer").innerHTML =`<span class="fw-bold">Writer:</span> ` + Writer;
         document.querySelector(".movie-Awards").innerHTML =`<span class="fw-bold">Awards:</span> ` + Awards;
-        // document.querySelector(".movie-BoxOffice").innerHTML =`<span class="fw-bold">BoxOffice:</span> ` + BoxOffice;
+        document.querySelector(".movie-BoxOffice").innerHTML =`<span class="fw-bold">BoxOffice:</span> ` + BoxOffice;
         document.querySelector(".poster-link").setAttribute("href", Poster);
         document.body.style.backgroundImage="url('https://source.unsplash.com/1600x900/?Movie)";
         setTimeout(() => {
