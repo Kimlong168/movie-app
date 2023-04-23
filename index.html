@@ -19,25 +19,26 @@
   </head>
   <body>
     <div class="container mt-2 p-4">
+      <p class="text-center text-danger power fw-bold">
+        Find movie's information
+      </p>
       <div class="row mb-4">
         <div class="d-flex mt-4 gap-2 w-100">
           <input
-            class="ps-3 p-2 w-100 text-start border border-light rounded-pill  text-white search-box"
+            class="ps-3 p-2 w-100 text-start border border-light rounded-pill text-white search-box"
             type="text"
             placeholder="Search"
             required
           />
           <button
-            class="btn btn-outline-dark text-white border border-light  rounded-circle search-btn"
+            class="btn btn-outline-dark text-white border border-light rounded-circle search-btn"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </div>
       <h1 class="text-center text-light power">Movie</h1>
-      <p class="text-center text-danger power fw-bold">
-        Find movie information:
-      </p>
+    
       <div class="row mt-3 spinner">
         <div class="spinner-border text-danger mx-auto" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -45,12 +46,14 @@
       </div>
 
       <div class="row mt-4">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-          <div class="card col-10 col-md-4 col-lg-3 overflow-hidden box-shadow box1">
-            <div>
-              <a class="poster-link"
-                ><img alt="poster" class="movie-poster w-100"
-              /></a>
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4"
+        >
+          <div
+            class="card col-10 col-md-4 col-lg-3 overflow-hidden box-shadow box1"
+          >
+            <div class="image-wrapper">
+              <a class="poster-link" target="_blank"><img class="movie-poster w-100" /></a>
             </div>
           </div>
           <div
@@ -77,8 +80,8 @@
 
     <!-- footer -->
     <footer class="my-5">
-      <div class="text-center text-light fw-bold">
-        Powerd by:
+      <div class="text-center text-light fw-bold py-1 rounded-pill bottom-text container">
+        <span>Powerd by:</span>
         <small>
           <a
             href="https://www.facebook.com/phnompenhcrown.fc.7?mibextid=ZbWKwL"

@@ -9,6 +9,7 @@ let movie = {
         .then((data) => this.getMovie(data));
     },
     getMovie: function (data) {
+    
         const {Title, Poster, Plot, Genre, Runtime, Director, Actors, Released, imdbRating, Writer, Awards, BoxOffice} = data;
         document.querySelector(".movie-title").innerHTML = Title;
         document.querySelector(".movie-poster").src = Poster;
@@ -26,6 +27,7 @@ let movie = {
         setTimeout(() => {
             document.querySelector(".loading").classList.remove('loading');
             document.querySelector(".spinner").style.display = "none";
+            document.querySelector(".image-wrapper").classList.remove('image-wrapper');
         },500);
 
     }
